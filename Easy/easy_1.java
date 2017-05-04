@@ -11,9 +11,9 @@ public class easy_1
 
     public static void main( String[] args )
             {
-                String name;
-                String age;
-                String redditUsername;
+             String name;
+             int age;
+             String redditUsername;
 
             Scanner myScanner = new Scanner(System.in);
 
@@ -21,11 +21,12 @@ public class easy_1
             name = myScanner.nextLine();
 
             System.out.println("How old are you?");
-            age = myScanner.nextInt().toString();
+            age = myScanner.nextInt();
 
             System.out.println("What is your reddit username?");
+            myScanner.nextLine();
             redditUsername = myScanner.nextLine();
 
-            System.out.println("your name is" + name +", you are" + age + "years old, and your username is" + redditUsername);
+            System.out.println("your name is " + name +", you are " + new Integer(age).toString() + " years old, and your username is " + redditUsername);
             }
 }
