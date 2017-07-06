@@ -30,3 +30,4 @@ public class easy_1
             System.out.println("your name is " + name +", you are " + new Integer(age).toString() + " years old, and your username is " + redditUsername);
             }
 }
+
